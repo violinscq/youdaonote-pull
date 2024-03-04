@@ -52,6 +52,8 @@ python3 -m venv app-venv
 pip install -r requirements.txt
 
 # 有问题可参考 https://www.liaoxuefeng.com/wiki/1016959663602400/1017493741106496
+# 如果报错文件路径找不到，可将requirements文件移动到用户名子目录下面
+# 如果报错文件在path中找不到，说明安装python时没加路径，需要打开windows环境变量补上PATH
 
 # 虚拟环境
 app-venv/bin/pip install -r requirements.txt
@@ -202,7 +204,7 @@ console.warn(JSON.stringify(formattedCookies, null, 2))
 }
 ```
 
-### 二、运行导出脚本
+### 二、运行导出脚本 //新手注意：在命令行里输入下面文字运行，不是直接点击notes文件；另外，输入时记得添加文件路径
 
 ```shell
 python3 pull_notes.py  # macOS/Linux
@@ -243,3 +245,6 @@ python  pull_notes.py   # Windows
 
 - [YoudaoNoteExport](https://github.com/wesley2012/YoudaoNoteExport)
 - [youdaonote-pull](https://github.com/DeppWang/youdaonote-pull.git)
+
+## 新手实操参考
+https://mp.weixin.qq.com/s?__biz=Mzk0NTI0NTA5MA==&mid=2247487492&idx=1&sn=9972b2b8986910870238f6ab20dbaea4&chksm=c3190ec9f46e87dfd3bd4dc2616e50c8633e4bf5b5d99b86023585f9e762c8fdfc4723c55292#rd
